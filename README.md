@@ -9,7 +9,7 @@ Website for TroopTechSolutions Pro, a home and small business IT services compan
 - `assets/` holds the logo, the icon-only logo and the favicon.
 
 ## Before launch: add your contact details
-Open `script.js` and fill in the `CONTACT` block at the top:
+The live values are set; to change them, open `script.js` and edit the `CONTACT` block at the top:
 
 ```js
 const CONTACT = {

@@ -24,6 +24,7 @@
 }
 
 *, *::before, *::after { box-sizing: border-box; }
+[hidden] { display: none !important; }
 html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 body {
   margin: 0;
@@ -405,3 +406,10 @@ svg { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-width:
 }
 .service-card.cta-card h3 { color: #fff; margin-top: 0; font-size: 1.35rem; }
 .service-card.cta-card p { margin-bottom: 1.4em; }
+
+/* Hero phone link */
+.hero-call { display: inline-flex; align-items: center; gap: 8px; margin: -8px 0 22px; font-weight: 600; color: var(--navy-700); }
+.hero-call span { color: var(--blue-600); text-decoration: underline; text-underline-offset: 3px; }
+.hero-call svg { width: 18px; height: 18px; color: var(--blue-500); }
+.footer-tag a { color: #c6d3ef; }
+.footer-tag a:hover { color: #fff; }
