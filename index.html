@@ -1,9 +1,551 @@
-<html>
- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TroopTechSolutions Pro | Home &amp; Small Business IT Services</title>
+  <meta name="description" content="TroopTechSolutions Pro makes technology work for you, not against you. Device setup, WiFi and networking, smart home, TV mounting, security cameras, home office, websites, repair and friendly tech training.">
+  <meta property="og:title" content="TroopTechSolutions Pro">
+  <meta property="og:description" content="Complete IT services for homes and small businesses. We make technology work for you, not against you.">
+  <meta property="og:image" content="https://trooptechsolutions.pro/assets/logo-full.png">
+  <meta property="og:url" content="https://trooptechsolutions.pro/">
+  <link rel="canonical" href="https://trooptechsolutions.pro/">
+  <meta name="theme-color" content="#0a1a3a">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
 <body>
-  <h1>Reggie Troop</h1>
-  <p>Welcome to my Progression and Evoulution</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a href="#top" class="brand" aria-label="TroopTechSolutions Pro home">
+        <img src="assets/logo-mark.png" alt="" class="brand-mark" width="80" height="40">
+        <span class="brand-text">Troop<span class="accent">Tech</span>Solutions <span class="brand-pro">PRO</span></span>
+      </a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" id="site-nav">
+        <a href="#services">Services</a>
+        <a href="#packages">Packages</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#who">Who We Help</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact" class="btn btn-primary btn-sm">Book Service</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="pixels" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">Home &amp; Small Business IT Services</p>
+          <h1>We make technology <span class="gradient-text">work for you</span>, not against you.</h1>
+          <p class="lead">From WiFi that finally reaches every room to smart homes, security cameras, home offices and websites &mdash; TroopTechSolutions Pro sets it up, secures it, and shows you how to use it.</p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">Book a Service Call</a>
+            <a href="#packages" class="btn btn-ghost">View Packages</a>
+          </div>
+          <ul class="hero-points">
+            <li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>$50 service call, applied to your bill</li>
+            <li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Packages from $150</li>
+            <li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Patient, plain-English help</li>
+          </ul>
+        </div>
+        <div class="hero-visual">
+          <div class="logo-card">
+            <img src="assets/logo-full.png" alt="TroopTechSolutions Pro logo" width="800" height="424">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ QUICK STRIP ============ -->
+    <section class="strip" aria-label="Service highlights">
+      <div class="container strip-inner">
+        <div><strong>Networks</strong><span>WiFi mesh &amp; routers</span></div>
+        <div><strong>Smart Home</strong><span>Lights, locks, thermostats</span></div>
+        <div><strong>A/V</strong><span>TV mounting &amp; theater</span></div>
+        <div><strong>Security</strong><span>Cameras &amp; doorbells</span></div>
+        <div><strong>Web</strong><span>Sites, email &amp; SEO</span></div>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Core Services</p>
+          <h2>Everything tech, under one roof</h2>
+          <p>Whether it's one stubborn printer or a whole-home upgrade, we handle the setup, the configuration, and the cleanup.</p>
+        </div>
+
+        <div class="filters" role="tablist" aria-label="Filter services">
+          <button class="chip active" data-filter="all" role="tab" aria-selected="true">All Services</button>
+          <button class="chip" data-filter="home" role="tab" aria-selected="false">Home Technology</button>
+          <button class="chip" data-filter="business" role="tab" aria-selected="false">Business &amp; Web</button>
+          <button class="chip" data-filter="it" role="tab" aria-selected="false">IT, Repair &amp; Training</button>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card" data-cat="home">
+            <div class="icon"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg></div>
+            <h3>Device Installation &amp; Setup</h3>
+            <ul>
+              <li>Computer, laptop &amp; tablet setup</li>
+              <li>Smartphone configuration &amp; data transfer</li>
+              <li>Smart TV installation &amp; configuration</li>
+              <li>Gaming console setup &amp; networking</li>
+              <li>Printer installation &amp; network integration</li>
+            </ul>
+          </article>
+
+          <article class="service-card" data-cat="home">
+            <div class="icon"><svg viewBox="0 0 24 24"><path d="M2 9a15 15 0 0 1 20 0M5 12.5a10 10 0 0 1 14 0M8.5 16a5 5 0 0 1 7 0"/><circle cx="12" cy="19.5" r="1"/></svg></div>
+            <h3>Network &amp; Connectivity</h3>
+            <ul>
+              <li>WiFi mesh installation &amp; optimization</li>
+              <li>Router configuration &amp; security setup</li>
+              <li>Network troubleshooting &amp; speed tuning</li>
+              <li>Ethernet cable installation</li>
+              <li>Internet connectivity consulting</li>
+            </ul>
+          </article>
+
+          <article class="service-card" data-cat="home">
+            <div class="icon"><svg viewBox="0 0 24 24"><path d="M3 11 12 4l9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-5h4v5"/></svg></div>
+            <h3>Smart Home Integration</h3>
+            <ul>
+              <li>Smart lighting (Philips Hue, smart switches)</li>
+              <li>Smart thermostats (Nest, Ecobee)</li>
+              <li>Smart doorbells &amp; security cameras</li>
+              <li>Smart locks &amp; access control</li>
+              <li>Voice assistants (Alexa, Google Home)</li>
+              <li>Home automation &amp; scene programming</li>
+            </ul>
+          </article>
+
+          <article class="service-card" data-cat="home">
+            <div class="icon"><svg viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="13" rx="2"/><path d="M7 21h10"/><path d="m10 9 5 2.5-5 2.5z"/></svg></div>
+            <h3>Audio / Visual</h3>
+            <ul>
+              <li>TV wall mounting &amp; cable management</li>
+              <li>Home theater setup &amp; calibration</li>
+              <li>Sound system installation</li>
+              <li>Streaming device configuration</li>
+              <li>Cord-cutting consultation &amp; setup</li>
+            </ul>
+          </article>
+
+          <article class="service-card" data-cat="home">
+            <div class="icon"><svg viewBox="0 0 24 24"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6z"/><path d="m9 12 2 2 4-4"/></svg></div>
+            <h3>Security &amp; Surveillance</h3>
+            <ul>
+              <li>Security cameras (indoor &amp; outdoor)</li>
+              <li>Video doorbell setup</li>
+              <li>Motion sensor installation</li>
+              <li>Security system integration</li>
+              <li>Remote monitoring setup</li>
+            </ul>
+          </article>
+
+          <article class="service-card" data-cat="business">
+            <div class="icon"><svg viewBox="0 0 24 24"><rect x="2" y="4" width="9" height="7" rx="1"/><rect x="13" y="4" width="9" height="7" rx="1"/><path d="M4 15h16v5H4z"/></svg></div>
+            <h3>Business &amp; Work-From-Home</h3>
+            <ul>
+              <li>Home office setup &amp; optimization</li>
+              <li>Video conferencing systems</li>
+              <li>Multi-monitor configurations</li>
+              <li>Ergonomic workstation design</li>
+              <li>VPN setup for remote work</li>
+              <li>Cloud storage configuration</li>
+              <li>Business phone system setup</li>
+            </ul>
+          </article>
+
+          <article class="service-card" data-cat="business">
+            <div class="icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></div>
+            <h3>Web &amp; Digital Services</h3>
+            <ul>
+              <li>Website design &amp; development</li>
+              <li>Domain registration &amp; hosting</li>
+              <li>Basic SEO optimization</li>
+              <li>Social media account setup</li>
+              <li>Online store creation</li>
+              <li>Email system configuration</li>
+              <li>Digital marketing consultation</li>
+            </ul>
+          </article>
+
+          <article class="service-card" data-cat="it">
+            <div class="icon"><svg viewBox="0 0 24 24"><path d="m8 9-4 3 4 3M16 9l4 3-4 3M14 5l-4 14"/></svg></div>
+            <h3>Software Services</h3>
+            <ul>
+              <li>Operating system updates &amp; upgrades</li>
+              <li>Software installation &amp; configuration</li>
+              <li>Antivirus setup &amp; security audits</li>
+              <li>Data backup solutions</li>
+              <li>Cloud service migration</li>
+              <li>Password manager setup</li>
+            </ul>
+          </article>
+
+          <article class="service-card" data-cat="it">
+            <div class="icon"><svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="1"/><rect x="9.5" y="9.5" width="5" height="5"/><path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"/></svg></div>
+            <h3>Hardware Services</h3>
+            <ul>
+              <li>Computer repair &amp; diagnostics</li>
+              <li>Upgrades (RAM, SSD, graphics cards)</li>
+              <li>Data recovery services</li>
+              <li>Device cleaning &amp; maintenance</li>
+              <li>Cable management &amp; organization</li>
+            </ul>
+          </article>
+
+          <article class="service-card" data-cat="it">
+            <div class="icon"><svg viewBox="0 0 24 24"><path d="M2 8 12 4l10 4-10 4z"/><path d="M6 10v5c0 1.5 3 3 6 3s6-1.5 6-3v-5"/></svg></div>
+            <h3>Training &amp; Support</h3>
+            <ul>
+              <li>Technology training for seniors</li>
+              <li>Software tutorials &amp; workshops</li>
+              <li>Ongoing technical support packages</li>
+              <li>Remote assistance setup</li>
+              <li>Digital literacy coaching</li>
+            </ul>
+          </article>
+
+          <article class="service-card" data-cat="it">
+            <div class="icon"><svg viewBox="0 0 24 24"><path d="M12 2 14.5 8.5 21 9l-5 4.5L17.5 20 12 16.5 6.5 20 8 13.5 3 9l6.5-.5z"/></svg></div>
+            <h3>Specialized Services</h3>
+            <ul>
+              <li>Network attached storage (NAS) setup</li>
+              <li>Gaming PC building &amp; optimization</li>
+              <li>Cryptocurrency wallet setup</li>
+              <li>IoT device integration</li>
+              <li>Digital photo organization</li>
+              <li>Legacy system modernization</li>
+            </ul>
+          </article>
+          <article class="service-card cta-card" data-cat="always">
+            <h3>Don't see what you need?</h3>
+            <p>If it plugs in, connects, or lights up, we can probably help. Tell us about it and we'll let you know.</p>
+            <a href="#contact" class="btn btn-primary">Ask About a Service</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PACKAGES ============ -->
+    <section class="section section-dark" id="packages">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Service Packages</p>
+          <h2>Bundle up and save</h2>
+          <p>Pick the package that fits your home or office. Bundled services save you 10&ndash;15% versus booking them one at a time.</p>
+        </div>
+
+        <div class="packages-grid">
+          <article class="package tier-bronze">
+            <h3>Bronze</h3>
+            <p class="price"><span class="currency">$</span>150</p>
+            <p class="tagline">Quick fixes &amp; fresh setups</p>
+            <ul>
+              <li>Basic device setup (1&ndash;2 devices)</li>
+              <li>WiFi troubleshooting</li>
+              <li>Software updates</li>
+              <li>1-hour consultation</li>
+            </ul>
+            <a href="#contact" class="btn btn-outline" data-package="Bronze">Choose Bronze</a>
+          </article>
+
+          <article class="package tier-silver">
+            <h3>Silver</h3>
+            <p class="price"><span class="currency">$</span>350</p>
+            <p class="tagline">A connected, secure home</p>
+            <ul>
+              <li>Complete home network setup</li>
+              <li>3&ndash;5 device configuration</li>
+              <li>Basic smart home integration</li>
+              <li>Security assessment</li>
+              <li>3-hour service window</li>
+            </ul>
+            <a href="#contact" class="btn btn-outline" data-package="Silver">Choose Silver</a>
+          </article>
+
+          <article class="package tier-gold featured">
+            <span class="badge">Most Popular</span>
+            <h3>Gold</h3>
+            <p class="price"><span class="currency">$</span>650</p>
+            <p class="tagline">The full smart home makeover</p>
+            <ul>
+              <li>Full smart home transformation</li>
+              <li>Professional network installation</li>
+              <li>Security camera system</li>
+              <li>Work-from-home office setup</li>
+              <li>6-hour comprehensive service</li>
+            </ul>
+            <a href="#contact" class="btn btn-primary" data-package="Gold">Choose Gold</a>
+          </article>
+
+          <article class="package tier-platinum">
+            <span class="badge badge-alt">All-Inclusive</span>
+            <h3>Platinum</h3>
+            <p class="price"><span class="currency">$</span>1,200</p>
+            <p class="tagline">Home, office &amp; online presence</p>
+            <ul>
+              <li><strong>Everything in Gold</strong></li>
+              <li>Custom website creation</li>
+              <li>Advanced automation setup</li>
+              <li>Monthly maintenance visits</li>
+              <li>Priority support for 3 months</li>
+            </ul>
+            <a href="#contact" class="btn btn-outline" data-package="Platinum">Choose Platinum</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PRICING ============ -->
+    <section class="section" id="pricing">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Straightforward Pricing</p>
+          <h2>No surprises on your bill</h2>
+          <p>Not sure you need a package? Book by the hour. You'll always know the rate before we start.</p>
+        </div>
+
+        <div class="pricing-grid">
+          <div class="price-tile">
+            <p class="label">Hourly Rate</p>
+            <p class="value">$85&ndash;125<small>/hr</small></p>
+            <p>Based on the complexity of the service.</p>
+          </div>
+          <div class="price-tile">
+            <p class="label">Service Call</p>
+            <p class="value">$50</p>
+            <p>Applied to your total when we perform the work.</p>
+          </div>
+          <div class="price-tile">
+            <p class="label">Maintenance Plan</p>
+            <p class="value">$75<small>/mo</small></p>
+            <p>Ongoing support to keep everything running smoothly.</p>
+          </div>
+          <div class="price-tile">
+            <p class="label">Bundle Discount</p>
+            <p class="value">10&ndash;15%<small> off</small></p>
+            <p>When you combine services into a package.</p>
+          </div>
+        </div>
+
+        <div class="referral">
+          <div class="referral-icon"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="M18 8v6M15 11h6"/></svg></div>
+          <div>
+            <h3>Refer a friend, save 10%</h3>
+            <p>Know a neighbor fighting with their WiFi? Send them our way and get 10% off your next service.</p>
+          </div>
+          <a href="#contact" class="btn btn-primary">Refer Someone</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WHO WE HELP ============ -->
+    <section class="section section-tint" id="who">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Who We Help</p>
+          <h2>Technology help for real life</h2>
+        </div>
+        <div class="who-grid">
+          <div class="who-card">
+            <div class="icon"><svg viewBox="0 0 24 24"><path d="M3 11 12 4l9 7"/><path d="M5 10v10h14V10"/></svg></div>
+            <h3>Homeowners</h3>
+            <p>Faster WiFi, smarter homes and entertainment systems that just work &mdash; installed cleanly and explained clearly.</p>
+          </div>
+          <div class="who-card">
+            <div class="icon"><svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 13h18"/></svg></div>
+            <h3>Small Businesses</h3>
+            <p>IT for teams of 1&ndash;10: networks, phones, cloud storage, email and a professional website.</p>
+          </div>
+          <div class="who-card">
+            <div class="icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="7" r="4"/><path d="M5 21a7 7 0 0 1 14 0"/></svg></div>
+            <h3>Seniors</h3>
+            <p>Patient, one-on-one training on phones, tablets, video calls and staying safe online &mdash; at your own pace.</p>
+          </div>
+          <div class="who-card">
+            <div class="icon"><svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
+            <h3>Remote Workers</h3>
+            <p>Home offices with multi-monitor setups, VPNs, reliable video conferencing and ergonomic workstations.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROCESS ============ -->
+    <section class="section" id="process">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">How It Works</p>
+          <h2>Simple from start to finish</h2>
+        </div>
+        <ol class="steps">
+          <li>
+            <span class="step-num">1</span>
+            <h3>Reach out</h3>
+            <p>Tell us what's going on or which package interests you.</p>
+          </li>
+          <li>
+            <span class="step-num">2</span>
+            <h3>We assess</h3>
+            <p>We review your setup and give you a clear plan and price.</p>
+          </li>
+          <li>
+            <span class="step-num">3</span>
+            <h3>We install</h3>
+            <p>Clean installation, tidy cables and everything tested.</p>
+          </li>
+          <li>
+            <span class="step-num">4</span>
+            <h3>You're supported</h3>
+            <p>We walk you through it and stay available when you need us.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="section section-tint" id="faq">
+      <div class="container narrow">
+        <div class="section-head">
+          <p class="eyebrow">FAQ</p>
+          <h2>Common questions</h2>
+        </div>
+        <div class="faq">
+          <details>
+            <summary>How does the $50 service call fee work?</summary>
+            <p>The service call covers our visit and initial diagnosis. If we go ahead and do the work, the $50 is applied toward your total &mdash; so you're not paying it twice.</p>
+          </details>
+          <details>
+            <summary>Should I book a package or pay by the hour?</summary>
+            <p>For a single, quick task, hourly ($85&ndash;125/hr depending on complexity) is usually best. If you need several things done &mdash; like a network, smart devices and a security check &mdash; a package bundles them at a 10&ndash;15% discount.</p>
+          </details>
+          <details>
+            <summary>What's included in the $75/month maintenance plan?</summary>
+            <p>Ongoing technical support for your devices and network, so you have someone to call when something stops working and your systems stay up to date.</p>
+          </details>
+          <details>
+            <summary>Do you help people who aren't comfortable with technology?</summary>
+            <p>Absolutely. Technology training for seniors and digital literacy coaching are core services. We go at your pace, explain things in plain English, and can set up remote assistance so help is always a call away.</p>
+          </details>
+          <details>
+            <summary>Can you build a website for my business?</summary>
+            <p>Yes &mdash; website design, domain and hosting setup, business email, basic SEO, social media accounts and online stores. A custom website is also included in the Platinum package.</p>
+          </details>
+          <details>
+            <summary>Do you run community workshops?</summary>
+            <p>Yes, we offer technology workshops and software tutorials. Reach out if you'd like to host one for your group or community center.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section section-dark" id="contact">
+      <div class="container contact-inner">
+        <div class="contact-copy">
+          <p class="eyebrow">Get Started</p>
+          <h2>Let's make your tech work for you.</h2>
+          <p>Tell us what you need and we'll get back to you to schedule a visit or remote session.</p>
+          <ul class="contact-list" id="contact-list">
+            <!-- Filled in from the CONTACT settings in script.js -->
+          </ul>
+        </div>
+
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="field-row">
+            <label>Name
+              <input type="text" name="name" required autocomplete="name">
+            </label>
+            <label>Phone
+              <input type="tel" name="phone" autocomplete="tel">
+            </label>
+          </div>
+          <label>Email
+            <input type="email" name="email" required autocomplete="email">
+          </label>
+          <div class="field-row">
+            <label>I'm interested in
+              <select name="service" id="service-select">
+                <option value="">Select a service&hellip;</option>
+                <optgroup label="Packages">
+                  <option>Bronze Package ($150)</option>
+                  <option>Silver Package ($350)</option>
+                  <option>Gold Package ($650)</option>
+                  <option>Platinum Package ($1,200)</option>
+                  <option>Maintenance Plan ($75/mo)</option>
+                </optgroup>
+                <optgroup label="Services">
+                  <option>Device Installation &amp; Setup</option>
+                  <option>Network &amp; WiFi</option>
+                  <option>Smart Home Integration</option>
+                  <option>Audio / Visual &amp; TV Mounting</option>
+                  <option>Security &amp; Surveillance</option>
+                  <option>Home Office / Business IT</option>
+                  <option>Website &amp; Digital Services</option>
+                  <option>Computer Repair &amp; Upgrades</option>
+                  <option>Software &amp; Data Backup</option>
+                  <option>Training &amp; Support</option>
+                  <option>Referral</option>
+                  <option>Something else</option>
+                </optgroup>
+              </select>
+            </label>
+            <label>I am a
+              <select name="customer">
+                <option>Homeowner</option>
+                <option>Small business</option>
+                <option>Senior / family member</option>
+                <option>Remote worker</option>
+              </select>
+            </label>
+          </div>
+          <label>How can we help?
+            <textarea name="message" rows="4" required placeholder="e.g. WiFi drops out upstairs, and I'd like a video doorbell installed."></textarea>
+          </label>
+          <button type="submit" class="btn btn-primary btn-block">Send Request</button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="assets/logo-mark.png" alt="" width="80" height="40">
+        <div>
+          <p class="footer-name">TroopTechSolutions Pro</p>
+          <p class="footer-tag">We make technology work for you, not against you.</p>
+        </div>
+      </div>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="#services">Services</a>
+        <a href="#packages">Packages</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <p class="copyright">&copy; <span id="year">2026</span> TroopTechSolutions Pro. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
- 
 </html>
