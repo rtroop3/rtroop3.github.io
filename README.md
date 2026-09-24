@@ -1,6 +1,6 @@
 # TroopTechSolutions Pro
 
-Website for TroopTechSolutions Pro, a home and small business IT services company. It is served with GitHub Pages at https://rtroop3.github.io.
+Website for TroopTechSolutions Pro, a home and small business IT services company. It is served with GitHub Pages at https://trooptechsolutions.pro. The `CNAME` file tells GitHub Pages to use that domain.
 
 ## Files
 - `index.html` holds the page content: services, packages, pricing, FAQ and contact.
