@@ -7,10 +7,10 @@
 // The contact form sends requests to `email`; leave any field
 // blank ('') to hide it from the page.
 const CONTACT = {
-  email: '',        // e.g. 'service@yourdomain.com'
-  phone: '',        // e.g. '(555) 123-4567'
+  email: 'service@trooptechsolutions.pro',
+  phone: '414-630-4541',
   serviceArea: '',  // e.g. 'Serving Springfield & surrounding areas'
-  hours: '',        // e.g. 'Mon–Sat, 9am–7pm'
+  hours: '7 am – 9 pm',
 };
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -64,6 +64,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Contact details
   renderContactList();
+  if (CONTACT.phone) {
+    const tel = 'tel:' + CONTACT.phone.replace(/[^\d+]/g, '');
+    document.querySelectorAll('[data-phone]').forEach((el) => {
+      el.href = tel;
+      el.querySelector('span').textContent = CONTACT.phone;
+      el.hidden = false;
+    });
+  }
 
   // Contact form -> opens the visitor's email app with the request filled in
   const form = document.getElementById('contact-form');
@@ -134,7 +142,7 @@ function renderContactList() {
   const esc = (s) => s.replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
   const items = [];
   if (CONTACT.phone) {
-    items.push(`<li><span class="ci">${icons.phone}</span><div><small>Call or text</small><a href="tel:${esc(CONTACT.phone.replace(/[^\d+]/g, ''))}">${esc(CONTACT.phone)}</a></div></li>`);
+    items.push(`<li><span class="ci">${icons.phone}</span><div><small>Call</small><a href="tel:${esc(CONTACT.phone.replace(/[^\d+]/g, ''))}">${esc(CONTACT.phone)}</a></div></li>`);
   }
   if (CONTACT.email) {
     items.push(`<li><span class="ci">${icons.email}</span><div><small>Email</small><a href="mailto:${esc(CONTACT.email)}">${esc(CONTACT.email)}</a></div></li>`);
