@@ -8,7 +8,7 @@
 // blank ('') to hide it from the page.
 const CONTACT = {
   email: 'service@trooptechsolutions.pro',
-  phone: '414-630-4541',
+  phone: '414-627-8899',
   serviceArea: '',  // e.g. 'Serving Springfield & surrounding areas'
   hours: '7 am – 9 pm',
 };
